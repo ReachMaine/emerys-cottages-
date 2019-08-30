@@ -1,0 +1,140 @@
+<?php
+vc_map( array(
+	'name'			=> esc_html__( 'Grand Title', 'hotella' ),
+	'base'			=> 'title_p_text',
+	'description'	=> esc_html__( 'Grand Title', 'hotella' ),
+	'icon'			=> 'title_p_text',
+	'category'		=> esc_html__( 'Webnus Shortcodes', 'hotella' ),
+	'params'		=> array(
+		array(
+			'type'				=> 'dropdown',
+			'heading'			=> esc_html__( 'Type', 'hotella' ),
+			'param_name'		=> 'type',
+			'value'				=> array(
+				'Type 1'	=> '1',
+				'Type 2'	=> '2',
+				'Type 3'	=> '3',
+			),
+			'description'		=> esc_html__( 'Choose your type', 'hotella'),
+		),
+		array(
+			'type'				=> 'dropdown',
+			'heading'			=> esc_html__( 'Text Align', 'hotella' ),
+			'param_name'		=> 'align',
+			'value'				=> array(
+				'none'			=> '',
+				'Left'		=> 'left',
+				'Right'		=> 'right',
+				'Center'	=> 'center',
+				),
+			'description'		=> esc_html__( 'Choose your type', 'hotella'),
+		),
+		array(
+			'type'				=> 'textfield',
+			'heading'			=> esc_html__('Top Title', 'hotella'),
+			'param_name'		=> 'top_title',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Please write top title', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+		array(
+			'type'				=> 'colorpicker',
+			'heading'			=> esc_html__('Color for Top Title', 'hotella'),
+			'param_name'		=> 'top_title_color',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Select Top Title color', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+		array(
+			'type'				=> 'textfield',
+			'heading'			=> esc_html__('Main Title - part 1', 'hotella'),
+			'param_name'		=> 'top_title_part_1',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Please write Main Title - part 1', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+		array(
+			'type'				=> 'textfield',
+			'heading'			=> esc_html__('Main Title - part 2', 'hotella'),
+			'param_name'		=> 'top_title_part_2',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Please write Main Title - part 2', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+		array(
+			'type'				=> 'colorpicker',
+			'heading'			=> esc_html__('Color for Main Title - part 1', 'hotella'),
+			'param_name'		=> 'top_title_part_1_color',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Select Main Title - part 1 color', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+		array(
+			'type'				=> 'colorpicker',
+			'heading'			=> esc_html__('Color for Main Title - part 2', 'hotella'),
+			'param_name'		=> 'top_title_part_2_color',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Select Main Title - part 2 color', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+		array(
+			'type'				=> 'textfield',
+			'heading'			=> esc_html__('Top Title 2', 'hotella'),
+			'param_name'		=> 'top_title_2',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Please write top title', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => '2',
+			),
+		),
+		array(
+			'type'				=> 'textfield',
+			'heading'			=> esc_html__('Main Title', 'hotella'),
+			'param_name'		=> 'main_title',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Please write Main Title', 'hotella'),
+			'edit_field_class'	=> 'vc_col-sm-6',
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => '2',
+			),
+		),
+		array(
+			'type'				=> 'textarea',
+			'heading'			=> esc_html__('Content', 'hotella'),
+			'param_name'		=> 'text_content',
+			'value'				=> '',
+			'description'		=> esc_html__( 'Please write Content', 'hotella'),
+			'dependency'		=> array(
+				'element' => 'type',
+				'value'   => array( '1', '3', ),
+			),
+		),
+)
+) );
